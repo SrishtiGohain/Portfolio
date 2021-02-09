@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="shortcut icon" type="image/jpg" href="fav.jpg"/>
+    <link rel="stylesheet" href="aboutstyle.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo">ABOUT ME</a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+
+      <table cellspacing="50px">
+        <tr>
+          <td><img src="profile.jpeg" alt="pic" class="myimg" /></td>
+          <td>
+            <br />
+            <h1>... here's a little intro :)</h1>
+            <br />
+            <p>
+              I am a Web Developer and Data Science enthusiast based in
+              Dehradun, India. I am currently a sophomore studying Computer
+              Science at VIT, Vellore. Being a bit of both: code junkie and
+              digital philocalist, I love structure and order and also stand for
+              quality. I believe in combining aesthetics and refined
+              interactions to create memorable digital experiences. <br />
+              <br />
+              <span
+                >Thanks for taking a look around! You can find me on the
+                internet <a href="index.html">here</a>.</span
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html">Contact Me</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      function toggle() {
+        var sec = document.getElementById("sec");
+        var nav = document.getElementById("navigation");
+        sec.classList.toggle("active");
+        nav.classList.toggle("active");
+      }
+
+      setTimeout(
+        'document.getElementById("preloader").style.display="none"',
+        500
+      );
+    </script>
+  </body>
+</html>
