@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="fav.jpg"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo">PORTFOLIO</a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <h2>Hello, <br />I am <span>Srishti Gohain.</span></h2>
+        <p>I love to develop and design!</p>
+        <a href="about.html">Know More</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="https://twitter.com/SrishtiGohain"
+            ><img src="twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/srishti-gohain-5a3169175/"
+            ><img src="linkedin.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/swisstea/"
+            ><img src="instagram.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/SrishtiGohain"
+            ><img src="github2.png"
+          /></a>
+        </li>
+        <li>
+          <a href="mailto: srishtigohain@gmail.com"><img src="mail2.jpeg" /></a>
+        </li>
+      </ul>
+    </section>
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html">Contact Me</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      function toggle() {
+        var sec = document.getElementById("sec");
+        var nav = document.getElementById("navigation");
+
+        sec.classList.toggle("active");
+        nav.classList.toggle("active");
+      }
+
+      setTimeout(
+        'document.getElementById("preloader").style.display="none"',
+        1000
+      );
+    </script>
+  </body>
+</html>
